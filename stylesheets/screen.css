@@ -133,6 +133,11 @@ body { -webkit-tap-highlight-color: rgba(255, 0, 0, 0.62); }
 .square-menu a { color: white; }
 .square-menu p a, .square-menu p a:hover, .square-menu p a:visited, .square-menu h2 a, .square-menu h2 a:hover, .square-menu h2 a:visited { color: white; }
 
+.square-menu a:hover { 
+    background: #334455; 
+    color: #20b2aa; 
+    text-decoration: none; }
+    
 .footer-right { color: #334455; }
 .footer-right p, .footer-right a, .footer-right a:visited { color: #334455; }
 .footer-right img { opacity: 0.7; filter: alpha(opacity=70); }
