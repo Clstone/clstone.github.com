@@ -88,7 +88,7 @@ section.content article.excerpt:nth-child(2n+1) { clear: both; }
 
 .footer-right { width: 7.5em; margin-top: 2em; padding-left: 0em; padding-right: 1em; }
 
-.paginator { width: 57em; float: left; margin-top: 2em; padding: 2em; }
+.paginator { display: block; width: 57em; float: left; margin-top: 2em; padding: 2em; }
 
 footer#colophon { clear: both; width: 12em; padding-top: 2em; }
 
