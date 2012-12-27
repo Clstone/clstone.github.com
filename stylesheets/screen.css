@@ -47,7 +47,7 @@ time { font-family: "ff-meta-web-pro-condensed-1", "ff-meta-web-pro-condensed-2"
 
 .square-menu h2 { font-family: "ff-meta-web-pro-condensed-1", "ff-meta-web-pro-condensed-2"; font-size: 1em; line-height: 1.5em; }
 .square-menu p { font-family: "ff-meta-web-pro-condensed-1", "ff-meta-web-pro-condensed-2"; font-size: 0.825em; }
-.square-menu p a { width: 12px; height: 2px; text-decoration:none;background: #666666;}
+.square-menu p a { width: 12px; height: 2px; text-decoration:none;background: #666666; margin: 0; padding: 0; }
 
 .square-menu p a:hover, .square-menu p a:visited { font-family: "ff-meta-web-pro-condensed-1", "ff-meta-web-pro-condensed-2"; font-size: 1em; text-decoration: none; }
 
