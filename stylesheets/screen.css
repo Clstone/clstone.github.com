@@ -70,7 +70,7 @@ h3, h4, h5, h6 { padding-top: 1em; }
 
 section.content { float: left; width: 61.5em; }
 
-section.menu { float: left; width: 7.5em; }
+section.menu { display: block; float: left; width: 7.5em; }
 
 section.content article.excerpt { float: left; overflow: hidden; width: 30em; }
 section.content article.excerpt p, section.content article.excerpt time { padding-left: 32px; padding-right: 32px; }
