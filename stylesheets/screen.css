@@ -115,7 +115,7 @@ h1 a:link, h1 a:visited, h2 a:link, h2 a:visited { color: inherit; text-decorati
 
 time { color: #334455; border-bottom: 3px solid #20b2aa; }
 
-::selection { background: #20b2aa; color: white; }
+::selection { background: #334455; color: white; }
 
 ::-moz-selection { background: #20b2aa; color: white; }
 
