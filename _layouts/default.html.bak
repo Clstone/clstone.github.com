@@ -60,8 +60,8 @@
         <h2>follow & contact</h2>
         <p>
         <ul> 
-           <li><a href="http://weibo.com/u/1774195310">Weibo</a> </li>
-           <li><a href="http://feeds.zhaocl.com/zhaocl">RSS</a> <li>
+           <li><a href="http://twitter.com/myabc">Twitter</a> </li>
+           <li><a href="http://feeds.alexbcoles.com/alexbcoles">RSS</a> <li>
            <!--
           <li> <script type="text/javascript">
           //<![CDATA[
@@ -95,7 +95,8 @@
           //]]>
           </script></li>  
           -->
-           <li><a href="http://github.com/clstone">GitHub</a></li>
+           <li><a href="http://github.com/myabc">GitHub</a></li>
+           <li><a href="http://delicious.com/alexbcoles">Delicious</a></li>
           </ul> 
         </p>
       </div>

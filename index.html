@@ -1,1 +1,28 @@
-Coming soon...
+---
+layout: default
+title:  various musings
+---
+
+{% for post in paginator.posts %}
+
+  {% include post_item.html %}
+
+{% endfor %}
+
+<div class="paginator separator-post">
+  <div id="menu-down-right">
+    {% if paginator.previous_page %}
+      <h3><a href="
+        {% if paginator.previous_page == 1 %}
+          /
+        {% else %}
+          /page{{ paginator.previous_page }}
+        {% endif %}">newer posts</a></h3>
+      {% endif %}
+  </div>
+  <div id="menu-down-left">
+    {% if paginator.next_page %}
+      <h3><a href="/page{{ paginator.next_page }}/">older posts</a></h3>
+    {% endif %}
+  </div>
+</div>
