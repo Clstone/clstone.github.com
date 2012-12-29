@@ -1,6 +1,6 @@
 ---
 layout: post
-title: “利用SAS抓取网页数据总结及案例1”
+title: 利用SAS抓取网页数据总结及案例1
 author: zhaocl
 categories: code
 tags:   [hello, world]
@@ -14,16 +14,16 @@ tags:   [hello, world]
 
 ##适用性
 
-下面介绍的例子只是介绍了静态网页数据的抓取方式。也就是说，如果你看到一些网页上的数据，然后在当前网页右键**“View Source”**中还能发现此数据，那么利用
+*  下面介绍的例子只是介绍了静态网页数据的抓取方式。也就是说，如果你看到一些网页上的数据，然后在当前网页右键**“View Source”**中还能发现此数据，那么利用
 
 下面的此案例相同方式理论都可以进去获取。
 
-然后并不是所有的数据你都能在网页源码中找到并进行提取，有些网页属于动态网页，有些数据会利用各种技术,如JS生成动态request, AJAX与数据库进行动态通信
-而这些就需要其他的技术方法去进行获取。网络上有各种C# JAVA的开源程序大家可以借鉴。另外，即时是我们手边的EXCEL+VBA，也可以进行各种的网页数据抓取，包括
+*  然而并不是所有的数据你都能在网页源码中找到并进行提取，有些网页属于动态网页，有些数据会利用各种技术,如JS生成动态request, AJAX与数据库进行动态通信
+而这些就需要其他的技术方法去进行获取。网络上有各种C#,JAVA的开源程序大家可以借鉴。另外，即时是我们手边的EXCEL+VBA，也可以进行各种的网页数据抓取，包括
 
 一些动态网页，QueryTable 或者 WebBrowser控件和httpRequest方法即可以达到目的。
 
-P.S. [@AJAX数据库实例](http://www.w3school.com.cn/tiy/t.asp?f=ajax_database)[@AJAX数据库实例讲解](http://www.w3school.com.cn/ajax/ajax_database.asp)
+P.S. [@AJAX数据库实例](http://www.w3school.com.cn/tiy/t.asp?f=ajax_database) || [@AJAX数据库实例讲解](http://www.w3school.com.cn/ajax/ajax_database.asp)
 
 
 ##正文
@@ -42,7 +42,7 @@ P.S. [@AJAX数据库实例](http://www.w3school.com.cn/tiy/t.asp?f=ajax_database
 
 按网页布局来说，一大坨文字的后面就应该放最新Shibor数据的源码，而他放了一句。
 
-    iframe scrolling="no" src ="/shibor/web/html/shibor.html" width="377" height="473" frameborder="0" name="shibordata"--/iframe
+    <iframe scrolling="no" src ="/shibor/web/html/shibor.html" width="377" height="473" frameborder="0" name="shibordata"></iframe>
 
 
 这是html内联框架结构，就是说他把数据放另一个网页上了，然后把这个网页嵌在主页里。好，那我们就打开此网页
@@ -60,7 +60,7 @@ syntax for this statement is:
 
     FILENAME fileref URL 'external-file'<url-options>;
     
-*  把Shibor数据网页导入SAS数据集。我们知道网页数据是标记语言，服从一定规范，所有属性设置都被'<>'包含。所以我们利用'dlm=">"'把它分隔导入到一个变量中，
+*  数据导入。把Shibor数据网页导入SAS数据集。我们知道网页数据是标记语言，服从一定规范，所有属性设置都被'<>'包含。所以我们利用'dlm=">"'把它分隔导入到一个变量中，
 
 因为数据太乱，我们没法分清导入到不同变量。
 
@@ -89,7 +89,7 @@ DATA Zhaocl02;
 RUN;
 </pre>
 
-###结局(别想歪了)
+###结局
 
 *  结果展现，拿到了清理后的数据，打开看下已经很清楚了。我们只有再做下最后简单的加工就好了，注意，由于网页布局的变动这段程序也可能要随之稍加修改。
 <pre>
