@@ -1,5 +1,10 @@
-
-
+---
+layout: post
+title: “利用SAS抓取网页数据总结及案例1”
+author: zhaocl
+categories: code
+tags:   [hello, world]
+---
 
 ##故事来由
 
@@ -18,7 +23,7 @@
 
 一些动态网页，QueryTable 或者 WebBrowser控件和httpRequest方法即可以达到目的。
 
-P.S.[AJAX数据库实例](http://www.w3school.com.cn/tiy/t.asp?f=ajax_database)[AJAX数据库实例讲解](http://www.w3school.com.cn/ajax/ajax_database.asp)
+P.S. [@AJAX数据库实例](http://www.w3school.com.cn/tiy/t.asp?f=ajax_database)[@AJAX数据库实例讲解](http://www.w3school.com.cn/ajax/ajax_database.asp)
 
 
 ##正文
@@ -34,24 +39,10 @@ P.S.[AJAX数据库实例](http://www.w3school.com.cn/tiy/t.asp?f=ajax_database)[
 
 网页布局。
 
-<pre>
-<p>
-全国银行间同业拆借中心受权Shibor的报价计算和信息发布。每个交易日根据各报价行的报价，剔除最高、最低各2家报价，对其余报价进行算术平均计算后，得出每一期
-
-限品种的Shibor，并于11:30对外发布。</p></font></td>
-                </tr>
-              </table></td>
-            </tr>
-          </table></td>
-          <td width="12"><img src="/shibor/web/html/images/newimages/mainindex_13.gif" width="12" height="440" alt=""></td>
-          <td width="302" valign="top">
-          
-         <iframe scrolling="no" src ="/shibor/web/html/shibor.html" width="377" height="473" frameborder="0" name="shibordata"></iframe>
-</pre>
 
 按网页布局来说，一大坨文字的后面就应该放最新Shibor数据的源码，而他放了一句。
 
-    <iframe scrolling="no" src ="/shibor/web/html/shibor.html" width="377" height="473" frameborder="0" name="shibordata"></iframe>
+    iframe scrolling="no" src ="/shibor/web/html/shibor.html" width="377" height="473" frameborder="0" name="shibordata"--/iframe
 
 
 这是html内联框架结构，就是说他把数据放另一个网页上了，然后把这个网页嵌在主页里。好，那我们就打开此网页
