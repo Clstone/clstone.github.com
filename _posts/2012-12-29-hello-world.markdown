@@ -22,4 +22,4 @@ run;
 
 ### Test Link
 
-[@a handsome boy](http://zhaocl.com)
+[@a handsome boy](http://zhaocl.com/)
