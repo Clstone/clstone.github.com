@@ -31,9 +31,8 @@ P.S. [@AJAX数据库实例](http://www.w3school.com.cn/tiy/t.asp?f=ajax_database
 ###前戏
 
 有时我们常常需要保存备份某些网上的数据，如银行利率，股票行情，抑或统计局、各种金融机构或其他类型网站的数据。
-有时这些网站会提供历史数据，有的则不会。但是我们可以通过SAS每天跑下程序获取累积历史数据作为后来的分析之用。现在我拿获取 [http://www.shibor.org/]
-
-(http://www.shibor.org/) 主页上海银行间同业拆放利率 作为案例进行演示。
+有时这些网站会提供历史数据，有的则不会。但是我们可以通过SAS每天跑下程序获取累积历史数据作为后来的分析之用。现在我拿获取 
+[http://www.shibor.org/](http://www.shibor.org/) 主页,上海银行间同业拆放利率,作为案例进行演示。
 
 当我们打开此网页，并进到网页源码中时，我们会惊讶的发现。什么情况，在主页上看到的数据在源码里找不到，难道使用了别的技术。我们大概浏览一下源码所表示的
 
@@ -47,21 +46,19 @@ P.S. [@AJAX数据库实例](http://www.w3school.com.cn/tiy/t.asp?f=ajax_database
 
 这是html内联框架结构，就是说他把数据放另一个网页上了，然后把这个网页嵌在主页里。好，那我们就打开此网页
 
-[http://www.shibor.org/shibor/web/html/shibor.html](http://www.shibor.org/shibor/web/html/shibor.html)并查看源码，发现数据就存在此网页中，那我们就开
-
-始用SAS抓它一下。
+[http://www.shibor.org/shibor/web/html/shibor.html](http://www.shibor.org/shibor/web/html/shibor.html)并查看源码，发现数据就存在此网页中，那我们就开始用SAS抓它一下。
 
 ###高潮
 
 首先介绍下Filename,利用它加上infile语句就可以把网页当成文件导入SAS数据集。
-The FILENAME Statement (URL Access Method) in Base SAS, enables users to access the source code from a web site and read it into a data set. The 
-
-syntax for this statement is: 
+The **FILENAME Statement** (URL Access Method) in Base SAS, enables users to access the source code from a web site and read it into a data set. The syntax for this statement is: 
 
     FILENAME fileref URL 'external-file'<url-options>;
-    
-*  数据导入。把Shibor数据网页导入SAS数据集。我们知道网页数据是标记语言，服从一定规范，所有属性设置都被'<>'包含。所以我们利用'dlm=">"'把它分隔导入到一个变量中，
 
+
+*  数据导入
+
+把Shibor数据网页导入SAS数据集。我们知道网页数据是标记语言，服从一定规范，所有属性设置都被`<>`包含。所以我们利用`dlm=">"`把它分隔导入到一个变量中，
 因为数据太乱，我们没法分清导入到不同变量。
 
 <pre>
@@ -73,8 +70,9 @@ DATA Zhaocl01;
 RUN;
 </pre>
 
-*  数据清洗。因为我们利用了`dlm=">"`进行了分隔，所以我们清楚观测值只要以`<`开头就说明这条观测只有设置语言，没有我们想要的数据。而我们真正要要的数据肯
+*  数据清洗
 
+因为我们利用了`dlm=">"`进行了分隔，所以我们清楚观测值只要以`<`开头就说明这条观测只有设置语言，没有我们想要的数据。而我们真正要要的数据肯
 定都在`<`标识符的前面。因为在网页源码中会用 `&nbsp`代表空格，`&amp`代表连字符，所以把他们进行替换。
 
 <pre>
@@ -91,7 +89,10 @@ RUN;
 
 ###结局
 
-*  结果展现，拿到了清理后的数据，打开看下已经很清楚了。我们只有再做下最后简单的加工就好了，注意，由于网页布局的变动这段程序也可能要随之稍加修改。
+*  结果展现
+
+拿到了清理后的数据集，打开看下已经很清楚了。我们只要再做下最后简单的加工就好了。注意，由于网页布局的变动这段程序也可能要随之稍加修改。
+
 <pre>
 data Zhaocl03;  
     set Zhaocl02;
@@ -118,9 +119,7 @@ proc print label;run;
 **相关资源**
 
 A Guide to Crawling the Web with SAS?
-[http://www.sascommunity.org/wiki/Simple_Web_Crawler_with_SAS_Macro_and_SAS_Data_Step]
-
-(http://www.sascommunity.org/wiki/Simple_Web_Crawler_with_SAS_Macro_and_SAS_Data_Step)
+[http://www.sascommunity.org/wiki/Simple_Web_Crawler_with_SAS_Macro_and_SAS_Data_Step](http://www.sascommunity.org/wiki/Simple_Web_Crawler_with_SAS_Macro_and_SAS_Data_Step)
 [http://support.sas.com/resources/papers/proceedings10/053-2010.pdf](http://support.sas.com/resources/papers/proceedings10/053-2010.pdf)
 
 被收录的译文,网络爬虫—利用SAS抓取网页方法
