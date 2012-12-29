@@ -11,7 +11,30 @@ tags:   [hello, world]
 
 Is everything fine?
 
-### Test Sas code
+# Header 1
+## Header 2
+### Header 3
+
+*This text will be emphasized.*
+**This text will be strong.**
+Inline `code` in typewriter style
+
+William Zinser:
+
+> Writing is thinking on paper. (no-more)
+
+* Item 1
+* Item 2
+  * Item 2a
+  * Item 2b
+
+1. Item 1
+2. Item 2
+   * Item 2a
+   * Item 2b
+
+
+### Test Codes
 
 <pre>
 data work.a;
@@ -19,6 +42,11 @@ data work.a;
 run;
 </pre>
 
+Use 4 spaces indentation:
+
+    function identity(x) {
+      return x;
+    }
 
 ### Test Link
 
