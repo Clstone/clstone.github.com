@@ -13,13 +13,13 @@ Is everything fine?
 
 ### Test Sas code
 
-{% highlight sas %}
+<pre>
 data work.a;
 	set hello.world;
 run;
-{% endhighlight %}
+</pre>
 
 
 ### Test Link
 
-[@a handsome boy]:https://zhaocl.com
+[@a handsome boy](https://zhaocl.com)
