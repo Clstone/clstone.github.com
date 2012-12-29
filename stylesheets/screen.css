@@ -94,7 +94,7 @@ section.content article.excerpt:nth-child(2n+1) { clear: both; }
 
 .paginator { display: block; width: 57em; float: left; margin-top: 2em; padding: 2em; }
 
-footer#colophon { clear: both; width: 12em; padding-top: 2em; }
+footer#colophon { clear: both; width: 100% ; padding-top: 2em; }
 
 .post-content-wide { float: left; overflow: hidden; width: 61.5em; }
 .post-content-wide p, .post-content-wide time { padding-left: 64px; padding-right: 320px; }
