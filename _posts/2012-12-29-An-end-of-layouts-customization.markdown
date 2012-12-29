@@ -1,9 +1,4 @@
 ---
-layout: default
-published: false
----
-
----
 layout: post
 title: "An end of layouts customization"
 author: zhaocl
