@@ -6,6 +6,7 @@ published: false
 ---
 layout: post
 title: "An end of layouts customization"
+author: zhaocl
 categories: me
 tags:   [layouts, customization]
 ---
