@@ -35,7 +35,7 @@ textarea { overflow: auto; }
 
 body { font-family: "museo-sans", "Microsoft YaHei", sans-serif; font-size: 1em; line-height: 1.5em; }
 
-h1 { font-family: "sniglet", "museo-sans", "Microsoft YaHei"; font-size: 2em; line-height: 3em; }
+h1 { font-family: "museo-sans", "Microsoft YaHei"; font-size: 2em; line-height: 3em; font-weight: 700;}
 
 h2 { font-family: "museo-sans", "Microsoft YaHei"; font-size: 1.2em; line-height: 3em; }
 
