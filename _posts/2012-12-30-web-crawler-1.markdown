@@ -134,4 +134,6 @@ A Guide to Crawling the Web with SAS?
 [http://www.itongji.cn/article/0221O62012.html](http://www.itongji.cn/article/0221O62012.html)
 [http://www.itongji.cn/article/0221OR012.html](http://www.itongji.cn/article/0221OR012.html)
 
-    身为技术型人才的您，好意思转帖不注明出处么？我觉得您不会。谢谢
+***
+身为技术型人才的您，相信您转帖肯定会注明出处。谢谢
+***
