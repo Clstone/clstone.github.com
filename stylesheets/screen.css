@@ -157,7 +157,7 @@ header p { color: #334455; }
 
 .paginator h3 a, .paginator h3 a:visited { color: #334455; }
 
-footer#colophon { border-bottom: 3px solid #20b2aa; }
+footer#colophon { border-bottom: 100% solid #20b2aa; }
 
 code { background-color: #eeeeff; }
 
