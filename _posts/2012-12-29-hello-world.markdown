@@ -2,7 +2,7 @@
 layout: post
 title: "Hello World"
 author: zhaocl
-categories: me
+categories: code
 tags:   [hello, world]
 ---
 
