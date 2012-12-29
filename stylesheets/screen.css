@@ -87,7 +87,7 @@ section.content article.excerpt:nth-child(2n+1) { clear: both; }
 
 #content-header { float: left; width: 12.5em; }
 
-.content-header a {display: block;}
+.content-header a {display: block; padding-right: 10em; }
 
 .square-menu { display: block; margin-top: 2em; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 1em; }
 .square-menu h2 { display: block; padding-top: 1em; padding-bottom: 0.5em; }
