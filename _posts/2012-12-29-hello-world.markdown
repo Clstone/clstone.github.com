@@ -11,9 +11,8 @@ tags:   [hello, world]
 
 Is everything fine?
 
-# Header 1
-## Header 2
-### Header 3
+_italics_
+### Bold
 
 *This text will be emphasized.*
 
