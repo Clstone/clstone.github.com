@@ -133,3 +133,5 @@ A Guide to Crawling the Web with SAS?
 被收录的译文,网络爬虫—利用SAS抓取网页方法
 [http://www.itongji.cn/article/0221O62012.html](http://www.itongji.cn/article/0221O62012.html)
 [http://www.itongji.cn/article/0221OR012.html](http://www.itongji.cn/article/0221OR012.html)
+
+    身为技术型人才的您，好意思转帖不注明出处么？我觉得您不会。谢谢
