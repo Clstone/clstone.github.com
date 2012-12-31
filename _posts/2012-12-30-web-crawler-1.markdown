@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 利用SAS抓取网页数据总结及案例1
+title: 利用SAS抓取网页数据总结及案例
 author: zhaocl
 categories: code
 tags:   [hello, world]
@@ -135,5 +135,5 @@ A Guide to Crawling the Web with SAS?
 [http://www.itongji.cn/article/0221OR012.html](http://www.itongji.cn/article/0221OR012.html)
 
 ***
-身为技术型人才的您，相信您转帖肯定会注明出处。在此谢过！
+转帖请注明出处。在此谢过！
 ***
