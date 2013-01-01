@@ -3,7 +3,7 @@ layout: post
 title: 利用SAS抓取网页数据总结及案例
 author: zhaocl
 categories: code
-tags:   [hello, world]
+tags:   [SAS, 网页数据, web crawler, 网络爬虫]
 ---
 
 ##故事来由
