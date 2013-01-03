@@ -15,7 +15,9 @@ tags:   [SAS, EXCEL, 导出, 模板]
 ##解决思路：
 
 这里有两个比较简单易用的方法可以优化我们导出的EXCEL的format.
+
 1. SAS里导出数据不只是那一种形式模板，其实已经内嵌了很多还算过得去眼的模板。
+
 2. 自己在EXCEL里动手DIY一个漂亮的模板，把数据位置空出。利用SAS打开模板，DDE功能导出。
 
 ##实施方法1：
@@ -82,7 +84,8 @@ run ;
 3. 利用filename+dde/file+put语句把数据导入到A5:G100。
 4. 再利用X Command把打开并导入数据的模板另存为某个文件名的excel文件。（每次模板不会被改动）
 
-主要程序如下,此处模板里有两个worksheet：
+
+* 主要程序如下,此处模板里有两个worksheet：
 <pre>
 options noxwait noxsync missing=' ';
 x '"d:\ODS_test\Report_template.xlsx"';
