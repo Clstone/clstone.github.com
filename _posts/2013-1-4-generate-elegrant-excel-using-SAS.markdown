@@ -85,7 +85,8 @@ run ;
 4. 再利用X Command把打开并导入数据的模板另存为某个文件名的excel文件。（每次模板不会被改动）
 
 
-* 主要程序如下,此处模板里有两个worksheet：
+**主要程序如下,此处模板里有两个worksheet**
+
 <pre>
 options noxwait noxsync missing=' ';
 x '"d:\ODS_test\Report_template.xlsx"';
