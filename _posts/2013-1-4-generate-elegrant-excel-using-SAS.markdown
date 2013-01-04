@@ -29,7 +29,7 @@ tags:   [SAS, EXCEL, 导出, 模板]
       RUN; 
     ODS HTML CLOSE;
 
-这时默认用default模板，可以通过在ODS HTML语句后加 Style=""参数设置模板。但是SAS里已经有哪些模板呢？可以用此句查看。
+这时默认用default模板，可以通过在ODS HTML语句后加 Style= 参数设置模板,**注意style的对应参数不要用引号括起来**。但是SAS里已经有哪些模板呢？可以用此句查看。
 `proc template;list styles;run`
 Furthermore,我们可以利用以下语句生成所有模板的案例excel文件到`D:\ODS_test`一探究竟，前提是你要建一个ODS_test文件夹。但是已经有人做好了html的模板总览可以一看，
 但是与生成excel里的样子稍有不同。[http://stat.lsu.edu/SAS_ODS_styles/SAS_ODS_styles.htm](http://stat.lsu.edu/SAS_ODS_styles/SAS_ODS_styles.htm)
