@@ -58,7 +58,7 @@ run;
                                          
 data _null_ ;                            
      length style $ 17 ;                 
-     infile list missover obs=12;        
+     infile list missover;        
      input @'Styles.' style ;            
      if style>' ' ;                  
                                      
