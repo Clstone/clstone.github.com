@@ -72,6 +72,18 @@ run ;
                  
 </pre>
 
+##更改ODS默认使用模板
+
+OK~,我们在其中选择了自己喜欢的模板，也知道了它的名字，比如说，`Sasweb`。但是如果每次都在写ODS语句后面写style=Sasweb
+岂不是很麻烦，那我们就来更改下SAS的默认ODS模板。使它默认就是用`Sasweb`style.
+
+步骤，
+1. 打开SAS,在命令行小窗口输入 `regedit`
+2. 进入SAS注册表，选择 ODS->DESTINATIONS->MARKUP->HTML4
+3. 在右边Contents窗口，把selected style的参数从Default改为Sasweb，OK！
+
+更多相关信息请参考[@SAS官方Doc](http://support.sas.com/documentation/cdl/en/statug/63347/HTML/default/viewer.htm#statug_odsgraph_sect046.htm)
+
 ##实施方法2：
 
 个人感觉方法2更于灵活方便美观。Dynamic Data Exchange (DDE) 它是一个在不同windows应用程序间动态交换数据的一种方法。
