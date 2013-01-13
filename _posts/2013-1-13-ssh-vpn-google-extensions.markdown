@@ -2,7 +2,7 @@
 layout: post
 title: Chrome安装扩展方法+免费越狱方式
 author: zhaocl
-categories: code
+categories: me
 tags:   [ssh,vpn,google,extensions]
 ---
 
