@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-
+<!--
 <script type="text/javascript">
 //<![CDATA[
 if (location.href.match(/localhost/)) {
@@ -9,7 +9,7 @@ if (location.href.match(/localhost/)) {
 }
 //]]>
 </script>
-
+-->
 <article>
   <header class="meta-post-wide">
     <div class="meta-title">
@@ -26,9 +26,10 @@ if (location.href.match(/localhost/)) {
     <p><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %b, %Y" }}</time></p>
   </div>
   <div class="post-content-disqus">
-    <div id="disqus_thread"></div>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+  <!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" id="UYScript" src="http://v1.uyan.cc/js/iframe.js?UYUserId=1732105" async=""></script>
+<!-- UY END -->
   </div>
 </article>
 
