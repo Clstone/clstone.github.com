@@ -3,7 +3,7 @@ layout: post
 title: "sashfhgfhg"
 description: ""
 categories: me
-tags:   [SAS, EXCEL, 导出, 模板]
+tags:   [SAS]
 ---
 {% include JB/setup %}
 ##问题：
