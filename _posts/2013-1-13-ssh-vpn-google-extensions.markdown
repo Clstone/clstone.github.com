@@ -1,11 +1,11 @@
----
+﻿---
 layout: post
-title: Chrome安装扩展方法+免费越狱方式
-author: zhaocl
+title: "Chrome安装扩展方法+免费越狱方式"
+description: ""
 categories: me
 tags:   [ssh,vpn,google,extensions]
 ---
-
+{% include JB/setup %}
 ##Chrome安装插件方法
 
 自从Chrome更新了扩展程序安装方式，每次下个crx的扩展程序都显示不能从此页进行安装。郁闷。。找了几种方法，都不能用。今天找到

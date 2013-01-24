@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "An end of layouts customization"
-author: zhaocl
+description: ""
 categories: me
 tags:   [layouts, customization]
 ---
-
+{% include JB/setup %}
 ###An end 
 
 That will be an end of layouts customization. To much efforts taken on layouts,fonts,colors for someone picking up CSS/HTML/JS again after years. It's time to begin to write something useful.

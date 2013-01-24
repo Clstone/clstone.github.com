@@ -1,11 +1,11 @@
----
+﻿---
 layout: post
 title: 利用SAS抓取网页数据总结及案例
-author: zhaocl
-categories: code
+description: ""
+categories: SAS
 tags:   [SAS, 网页数据, web crawler, 网络爬虫]
 ---
-
+{% include JB/setup %}
 ##故事来由
 
 本人以前有一小站`www.daaata.com`刊登几篇关于利用SAS抓取网页数据的小文，然后挂了个链接在人大论坛。后因懒惰，此站挂掉，相继有人询问。在从新有此博后打

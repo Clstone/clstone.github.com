@@ -1,11 +1,11 @@
----
+﻿---
 layout: post
-title: 用SAS生成漂亮精美的EXCEl模板数据
-author: zhaocl
+title: "用SAS生成漂亮精美的EXCEl模板数据"
+description: ""
 categories: sas
 tags:   [SAS, EXCEL, 导出, 模板]
 ---
-
+{% include JB/setup %}
 ##问题：
 
 不管你是用SAS Proc export还是file statement还是libname excel引擎还是ODS+print/report/summary还是DDE。。把数据导出到SAS，默认情况的格式都是蛮丑的。

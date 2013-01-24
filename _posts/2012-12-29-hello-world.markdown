@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "Hello World"
-author: zhaocl
-categories: code
+description: ""
+categories: me
 tags:   [hello, world]
 ---
-
+{% include JB/setup %}
 ## This is the first artical in this site.
 ### Just for test
 
