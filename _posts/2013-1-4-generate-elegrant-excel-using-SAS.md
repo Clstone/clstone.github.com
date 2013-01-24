@@ -2,7 +2,7 @@
 layout: post
 title: "用SAS生成漂亮精美的EXCEl模板数据"
 description: ""
-categories: sas
+categories: me
 tags:   [SAS, EXCEL, 导出, 模板]
 ---
 {% include JB/setup %}
