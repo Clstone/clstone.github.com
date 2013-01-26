@@ -96,7 +96,7 @@ RUN;
 
 拿到了清理后的数据集，打开看下已经很清楚了。我们只要再做下最后简单的加工就好了。注意，由于网页布局的变动这段程序也可能要随之稍加修改。
 
-<pre>
+{% highlight %}
 data Zhaocl03;  
     set Zhaocl02;
     set Zhaocl02(firstobs=2 rename=(text=next1));  
@@ -108,7 +108,7 @@ data Zhaocl03;
 run; 
  
 proc print label;run;
-</pre> 
+{% endhighlight %}
  
  
 ![presentation](http://img2081.poco.cn/mypoco/myphoto/20121230/05/17326974720121230054538087.jpg) 
