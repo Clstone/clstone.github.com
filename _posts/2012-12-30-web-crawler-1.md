@@ -28,13 +28,13 @@ P.S. [@AJAX数据库实例](http://www.w3school.com.cn/tiy/t.asp?f=ajax_database
 
 ###正文
 
-#####前戏
+###前戏
 
 有时我们常常需要保存备份某些网上的数据，如银行利率，股票行情，抑或统计局、各种金融机构或其他类型网站的数据。
 有时这些网站会提供历史数据，有的则不会。但是我们可以通过SAS每天跑下程序获取累积历史数据作为后来的分析之用。现在我拿获取 
 [http://www.shibor.org/](http://www.shibor.org/) 主页,上海银行间同业拆放利率,作为案例进行演示。
 
-#####以下为主页上我们想要的数据
+###以下为主页上我们想要的数据
 ![shibor table][Shibor]
 
 当我们打开此网页，并进到网页源码中时，我们会惊讶的发现。什么情况，在主页上看到的数据在源码里找不到，难道使用了别的技术。我们大概浏览一下源码所表示的
@@ -51,7 +51,7 @@ P.S. [@AJAX数据库实例](http://www.w3school.com.cn/tiy/t.asp?f=ajax_database
 
 [http://www.shibor.org/shibor/web/html/shibor.html](http://www.shibor.org/shibor/web/html/shibor.html)并查看源码，发现数据就存在此网页中，那我们就开始用SAS抓它一下。
 
-####高潮
+###高潮
 
 首先介绍下Filename,利用它加上infile语句就可以把网页当成文件导入SAS数据集。
 The **FILENAME Statement** (URL Access Method) in Base SAS, enables users to access the source code from a web site and read it into a data set. The syntax for this statement is: 
