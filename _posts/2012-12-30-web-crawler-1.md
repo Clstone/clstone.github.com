@@ -35,10 +35,7 @@ P.S. [@AJAX数据库实例](http://www.w3school.com.cn/tiy/t.asp?f=ajax_database
 [http://www.shibor.org/](http://www.shibor.org/) 主页,上海银行间同业拆放利率,作为案例进行演示。
 
 #####以下为主页上我们想要的数据
-
-
 ![shibor table][Shibor]
-
 
 当我们打开此网页，并进到网页源码中时，我们会惊讶的发现。什么情况，在主页上看到的数据在源码里找不到，难道使用了别的技术。我们大概浏览一下源码所表示的
 
@@ -81,7 +78,7 @@ RUN;
 因为我们利用了`dlm=">"`进行了分隔，所以我们清楚收集到的观测值只要以`<`开头就说明这条观测只有设置语言，没有我们想要的数据。而我们真正要要的数据肯
 定都在`<`标识符的前面。因为在网页源码中会用 `&nbsp`代表空格，`&amp`代表连字符，所以把他们进行替换。
 
-<pre>
+{% highlight %}
 DATA Zhaocl02;
 	SET Zhaocl01;
 	WHERE WEBPAGE LIKE "_%<%";     /**删除以<开头的观测**/
@@ -91,7 +88,7 @@ DATA Zhaocl02;
 	IF ANYALPHA(TEXT) + ANYDIGIT(TEXT) LT 1 THEN DELETE;  /**保留有效观测**/
 	KEEP TEXT;
 RUN;
-</pre>
+{% endhighlight %}
 
 ###结局
 
@@ -136,9 +133,9 @@ A Guide to Crawling the Web with SAS?
 [http://www.itongji.cn/article/0221O62012.html](http://www.itongji.cn/article/0221O62012.html)
 [http://www.itongji.cn/article/0221OR012.html](http://www.itongji.cn/article/0221OR012.html)
 
-***
+---
 转帖请注明出处。在此谢过！ 
-***
+---
 
 
 [Shibor]: http://img2081.poco.cn/mypoco/myphoto/20121230/05/17326974720121230053258013.jpg
