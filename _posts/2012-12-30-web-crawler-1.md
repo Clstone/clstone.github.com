@@ -65,7 +65,7 @@ The **FILENAME Statement** (URL Access Method) in Base SAS, enables users to acc
 把Shibor数据网页导入SAS数据集。我们知道网页数据是标记语言，服从一定规范，所有属性设置都被`<>`包含。所以我们利用`dlm=">"`把它分隔导入到一个变量中，
 因为数据太乱，我们没法分清使之导入到不同变量。
 
-{% highlight s %}
+{% highlight S %}
 FILENAME SOURCE URL "%STR(http://www.shibor.org/shibor/web/html/shibor.html)" DEBUG;
 DATA Zhaocl01;
 	FORMAT WEBPAGE $1000.;
@@ -79,7 +79,7 @@ RUN;
 因为我们利用了`dlm=">"`进行了分隔，所以我们清楚收集到的观测值只要以`<`开头就说明这条观测只有设置语言，没有我们想要的数据。而我们真正要要的数据肯
 定都在`<`标识符的前面。因为在网页源码中会用 `&nbsp`代表空格，`&amp`代表连字符，所以把他们进行替换。
 
-{% highlight s %}
+{% highlight s-plus %}
 DATA Zhaocl02;
 	SET Zhaocl01;
 	WHERE WEBPAGE LIKE "_%<%";     /**删除以<开头的观测**/
