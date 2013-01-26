@@ -3,7 +3,7 @@ layout: post
 title: 利用SAS抓取网页数据总结及案例
 description: ""
 categories: SAS
-tags:   [SAS, 网页数据, web crawler, 网络爬虫]
+tags:   [Web, SAS]
 ---
 {% include JB/setup %}
 
