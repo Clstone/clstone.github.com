@@ -6,13 +6,13 @@ categories: SAS
 tags:   [SAS, 网页数据, web crawler, 网络爬虫]
 ---
 {% include JB/setup %}
-##故事来由
+###故事来由
 
 本人以前有一小站`www.daaata.com`刊登几篇关于利用SAS抓取网页数据的小文，然后挂了个链接在人大论坛。后因懒惰，此站挂掉，相继有人询问。在从新有此博后打
 
 算把其中一篇简单易懂的补上，另外几篇译文已被[@统计网](http://itongji.cn/)收录，文章末尾会贴上链接。
 
-##适用性
+###适用性
 
 *  下面介绍的例子只是介绍了静态网页数据的抓取方式。也就是说，如果你看到一些网页上的数据，然后在当前网页右键**“View Source”**中还能发现此数据，那么利用
 
@@ -25,15 +25,15 @@ tags:   [SAS, 网页数据, web crawler, 网络爬虫]
 P.S. [@AJAX数据库实例](http://www.w3school.com.cn/tiy/t.asp?f=ajax_database) || [@AJAX数据库实例讲解](http://www.w3school.com.cn/ajax/ajax_database.asp)
 
 
-##正文
+###正文
 
-###前戏
+####前戏
 
 有时我们常常需要保存备份某些网上的数据，如银行利率，股票行情，抑或统计局、各种金融机构或其他类型网站的数据。
 有时这些网站会提供历史数据，有的则不会。但是我们可以通过SAS每天跑下程序获取累积历史数据作为后来的分析之用。现在我拿获取 
 [http://www.shibor.org/](http://www.shibor.org/) 主页,上海银行间同业拆放利率,作为案例进行演示。
 
-###以下为主页上我们想要的数据
+####以下为主页上我们想要的数据
 
 ![shibor table](http://img2081.poco.cn/mypoco/myphoto/20121230/05/17326974720121230053258013.jpg)
 
@@ -52,7 +52,7 @@ P.S. [@AJAX数据库实例](http://www.w3school.com.cn/tiy/t.asp?f=ajax_database
 
 [http://www.shibor.org/shibor/web/html/shibor.html](http://www.shibor.org/shibor/web/html/shibor.html)并查看源码，发现数据就存在此网页中，那我们就开始用SAS抓它一下。
 
-###高潮
+####高潮
 
 首先介绍下Filename,利用它加上infile语句就可以把网页当成文件导入SAS数据集。
 The **FILENAME Statement** (URL Access Method) in Base SAS, enables users to access the source code from a web site and read it into a data set. The syntax for this statement is: 
