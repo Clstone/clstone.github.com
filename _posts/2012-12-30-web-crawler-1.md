@@ -6,6 +6,7 @@ categories: SAS
 tags:   [SAS, 网页数据, web crawler, 网络爬虫]
 ---
 {% include JB/setup %}
+
 ###故事来由
 
 本人以前有一小站`www.daaata.com`刊登几篇关于利用SAS抓取网页数据的小文，然后挂了个链接在人大论坛。后因懒惰，此站挂掉，相继有人询问。在从新有此博后打
@@ -34,6 +35,7 @@ P.S. [@AJAX数据库实例](http://www.w3school.com.cn/tiy/t.asp?f=ajax_database
 [http://www.shibor.org/](http://www.shibor.org/) 主页,上海银行间同业拆放利率,作为案例进行演示。
 
 ####以下为主页上我们想要的数据
+
 
 ![shibor table](http://img2081.poco.cn/mypoco/myphoto/20121230/05/17326974720121230053258013.jpg)
 
@@ -65,21 +67,21 @@ The **FILENAME Statement** (URL Access Method) in Base SAS, enables users to acc
 把Shibor数据网页导入SAS数据集。我们知道网页数据是标记语言，服从一定规范，所有属性设置都被`<>`包含。所以我们利用`dlm=">"`把它分隔导入到一个变量中，
 因为数据太乱，我们没法分清使之导入到不同变量。
 
-{% highlight Tcl %}
+<pre>
 FILENAME SOURCE URL "%STR(http://www.shibor.org/shibor/web/html/shibor.html)" DEBUG;
 DATA Zhaocl01;
 	FORMAT WEBPAGE $1000.;
 	INFILE SOURCE LRECL=32767 DELIMITER=">";
 	INPUT WEBPAGE $ @@;
 RUN;
-{% endhighlight %}
+</pre>
 
 *  数据清洗
 
 因为我们利用了`dlm=">"`进行了分隔，所以我们清楚收集到的观测值只要以`<`开头就说明这条观测只有设置语言，没有我们想要的数据。而我们真正要要的数据肯
 定都在`<`标识符的前面。因为在网页源码中会用 `&nbsp`代表空格，`&amp`代表连字符，所以把他们进行替换。
 
-{% highlight Mysql %}
+<pre>
 DATA Zhaocl02;
 	SET Zhaocl01;
 	WHERE WEBPAGE LIKE "_%<%";     /**删除以<开头的观测**/
@@ -89,7 +91,7 @@ DATA Zhaocl02;
 	IF ANYALPHA(TEXT) + ANYDIGIT(TEXT) LT 1 THEN DELETE;  /**保留有效观测**/
 	KEEP TEXT;
 RUN;
-{% endhighlight %}
+</pre>
 
 ###结局
 
@@ -109,10 +111,10 @@ data Zhaocl03;
 run; 
  
 proc print label;run;
-</pre>
-
-
-![presentation](http://img2081.poco.cn/mypoco/myphoto/20121230/05/17326974720121230054538087.jpg)
+</pre> 
+ 
+ 
+![presentation](http://img2081.poco.cn/mypoco/myphoto/20121230/05/17326974720121230054538087.jpg) 
 
 
 
