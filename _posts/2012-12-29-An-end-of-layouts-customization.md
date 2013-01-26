@@ -3,7 +3,7 @@ layout: post
 title: "An end of layouts customization"
 description: ""
 categories: me
-tags:   [layouts, customization]
+tags:   [web]
 ---
 {% include JB/setup %}
 ###An end 
