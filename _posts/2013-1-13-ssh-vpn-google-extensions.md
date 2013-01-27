@@ -8,7 +8,7 @@ tags:   [tips]
 {% include JB/setup %}
 ###Chrome安装插件方法
 
-自从Chrome更新了扩展程序安装方式，每次下个crx的扩展程序都显示不能从此页进行安装。郁闷。。找了几种方法，都不能用。今天找到
+自从Chrome更新了扩展程序安装方式，每次下个crx的扩展程序都显示不能从此页进行安装。郁闷.。。找了几种方法，都不能用。今天找到
 一种方法可行。在你的google的快键方式上右键-》属性(properties)，有个目标(target)窗口。
 {% highlight html %}
 把其中
