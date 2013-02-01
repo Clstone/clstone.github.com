@@ -7,13 +7,13 @@ tags:   [Web, SAS]
 ---
 {% include JB/setup %}
 
-###故事来由
+####故事来由
 
 本人以前有一小站`www.daaata.com`刊登几篇关于利用SAS抓取网页数据的小文，然后挂了个链接在人大论坛。后因懒惰，此站挂掉，相继有人询问。在从新有此博后打
 
 算把其中一篇简单易懂的补上，另外几篇译文已被[@统计网](http://itongji.cn/)收录，文章末尾会贴上链接。
 
-###适用性
+####适用性
 
 *  下面介绍的例子只是介绍了静态网页数据的抓取方式。也就是说，如果你看到一些网页上的数据，然后在当前网页右键**“View Source”**中还能发现此数据，那么利用
 
@@ -26,7 +26,7 @@ tags:   [Web, SAS]
 P.S. [@AJAX数据库实例](http://www.w3school.com.cn/tiy/t.asp?f=ajax_database) || [@AJAX数据库实例讲解](http://www.w3school.com.cn/ajax/ajax_database.asp)
 
 
-###正文
+####正文
 
 ####前戏
 
@@ -93,7 +93,7 @@ RUN;
     RUN;
 
 
-###结局
+####结局
 
 *  结果展现
 
@@ -118,7 +118,7 @@ proc print label;run;
 
 
 
-###其他
+####其他
 
 **正则表达式**
 
