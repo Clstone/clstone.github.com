@@ -6,20 +6,20 @@ categories: SAS
 tags:   [SAS]
 ---
 {% include JB/setup %}
-###问题：
+####问题：
 
 不管你是用SAS Proc export还是file statement还是libname excel引擎还是ODS+print/report/summary还是DDE。。把数据导出到SAS，默认情况的格式都是蛮丑的。
 当我们在做类似重复性工作时，后续的EXCEL内部美化将会是烦劳的事情。而如果我们真正着手利用proc template + proc report制作一个个性化的稍微
 漂亮的模板时，首先我们要理解十几个甚至更多参数对应到excel的位置，功能，然后再调试。当Excel,SAS版本更新时还要担心兼容性。本身也不是一件有趣的事来着。
 
-###解决思路：
+####解决思路：
 
 这里有两个比较简单易用的方法可以优化我们导出的EXCEL的format.      
 
 1. 用SAS导出数据时不是只有一种形式模板，其实已经内嵌了很多还算过得去眼的模板。
 2. 自己在EXCEL里动手DIY一个漂亮的模板，把数据位置空出。利用SAS打开模板，DDE功能导出。
 
-###实施方法1：
+####实施方法1：
 
 这里我们利用最简单的ODS HTML Syntax生成excel作为例子，平常我们可以用odstagsets.ExcelXP style=“”生成多个worksheet或者设置更多的参数。
     
@@ -71,7 +71,7 @@ run ;
                  
 </pre>
 
-###更改ODS默认使用模板
+####更改ODS默认使用模板
 
 OK~,我们在其中选择了自己喜欢的模板，也知道了它的名字，比如说，`Sasweb`。但是如果每次都在写ODS语句后面写style=Sasweb
 岂不是很麻烦，那我们就来更改下SAS的默认ODS模板。使它默认就是用`Sasweb`style.
@@ -84,7 +84,7 @@ OK~,我们在其中选择了自己喜欢的模板，也知道了它的名字，�
 
 更多相关信息请参考[@SAS官方Doc](http://support.sas.com/documentation/cdl/en/statug/63347/HTML/default/viewer.htm#statug_odsgraph_sect046.htm)
 
-##实施方法2：
+####实施方法2：
 
 个人感觉方法2更于灵活方便美观。Dynamic Data Exchange (DDE) 它是一个在不同windows应用程序间动态交换数据的一种方法。
 
@@ -136,7 +136,7 @@ run;
 
 </pre>
 
-***
+---
 转帖请注明出处。在此谢过！  
 
-***
+---
