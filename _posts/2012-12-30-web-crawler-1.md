@@ -78,17 +78,20 @@ RUN;
 因为我们利用了`dlm=">"`进行了分隔，所以我们清楚收集到的观测值只要以`<`开头就说明这条观测只有设置语言，没有我们想要的数据。而我们真正要要的数据肯
 定都在`<`标识符的前面。因为在网页源码中会用 `&nbsp`代表空格，`&amp`代表连字符，所以把他们进行替换。
 
-{% highlight %}
+<pre>
 DATA Zhaocl02;
 	SET Zhaocl01;
-	WHERE WEBPAGE LIKE "_%<%";     /**删除以<开头的观测**/
-	TEXT=SUBSTRN(WEBPAGE,1,FIND(WEBPAGE,"<")-1);   /**提取<前面的字符串**/
+**删除以<开头的观测;
+	WHERE WEBPAGE LIKE "_%<%";     
+	TEXT=SUBSTRN(WEBPAGE,1,FIND(WEBPAGE,"<")-1);  
+**提取<前面的字符串;
 	TEXT=TRANWRD(TEXT,"%NRSTR(&nbsp;)"," ");
 	TEXT=TRANWRD(TEXT,"%NRSTR(&amp;)","&");
-	IF ANYALPHA(TEXT) + ANYDIGIT(TEXT) LT 1 THEN DELETE;  /**保留有效观测**/
+**保留有效观测;
+	IF ANYALPHA(TEXT) + ANYDIGIT(TEXT) LT 1 THEN DELETE;  
 	KEEP TEXT;
 RUN;
-{% endhighlight %}
+</pre>
 
 ###结局
 
@@ -96,7 +99,7 @@ RUN;
 
 拿到了清理后的数据集，打开看下已经很清楚了。我们只要再做下最后简单的加工就好了。注意，由于网页布局的变动这段程序也可能要随之稍加修改。
 
-{% highlight %}
+<pre>
 data Zhaocl03;  
     set Zhaocl02;
     set Zhaocl02(firstobs=2 rename=(text=next1));  
@@ -108,7 +111,7 @@ data Zhaocl03;
 run; 
  
 proc print label;run;
-{% endhighlight %}
+</pre>
  
  
 ![presentation](http://img2081.poco.cn/mypoco/myphoto/20121230/05/17326974720121230054538087.jpg) 
