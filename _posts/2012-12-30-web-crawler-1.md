@@ -79,6 +79,7 @@ RUN;
 定都在`<`标识符的前面。因为在网页源码中会用 `&nbsp`代表空格，`&amp`代表连字符，所以把他们进行替换。
 
 <pre>
+<code>
 DATA Zhaocl02;
 	SET Zhaocl01;
 **删除以<开头的观测;
@@ -91,6 +92,7 @@ DATA Zhaocl02;
 	IF ANYALPHA(TEXT) + ANYDIGIT(TEXT) LT 1 THEN DELETE;  
 	KEEP TEXT;
 RUN;
+</code>
 </pre>
 
 ###结局
