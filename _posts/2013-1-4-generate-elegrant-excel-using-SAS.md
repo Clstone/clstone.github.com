@@ -34,8 +34,8 @@ tags:   [SAS]
 Furthermore,我们可以利用以下语句生成所有模板的案例excel文件到`D:\ODS_test`一探究竟，前提是你要建一个ODS_test文件夹。但是已经有人做好了html的模板总览可以一看，
 但是与生成excel里的样子稍有不同。[http://stat.lsu.edu/SAS_ODS_styles/SAS_ODS_styles.htm](http://stat.lsu.edu/SAS_ODS_styles/SAS_ODS_styles.htm)
 
-{% highlight %}
-/** 生成所有excel模板的案例到D:\ODS_test,注意生成过程时一直点取消/Cancel **/
+<pre>
+** 生成所有excel模板的案例到D:\ODS_test,注意生成过程时一直点取消/Cancel;
 
 dm 'log; clear; output; clear';                                          
                                                                          
@@ -69,7 +69,7 @@ data _null_ ;
      call execute('ods html close'||';') ;     
 run ;
                  
-{% endhighlight %}
+</pre>
 
 ###更改ODS默认使用模板
 
@@ -98,7 +98,7 @@ OK~,我们在其中选择了自己喜欢的模板，也知道了它的名字，�
 
 **主要程序如下,此处模板里有两个worksheet**
 
-{% highlight %}
+<pre>
 options noxwait noxsync missing=' ';
 x '"d:\ODS_test\Report_template.xlsx"';
 
@@ -134,7 +134,7 @@ data _null_;
 	put '[quit()]';
 run;
 
-{% endhighlight %}
+</pre>
 
 ***
 转帖请注明出处。在此谢过！  
