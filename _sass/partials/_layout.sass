@@ -1,0 +1,150 @@
+header#site-header
+  +width(16)
+  margin: 0 auto
+
+header
+  p
+    text-align:   right
+  h1
+    padding-top:  1em
+
+h3, h4, h5, h6
+  padding-top:  1em
+
+.content-plus-menu
+  +width(16)
+  margin: 0 auto
+
+section.content
+  float: left
+  +width(14)
+
+section.menu
+  float: left
+  +width(2)
+
+section.content article.excerpt
+  float: left
+  overflow: hidden
+  +width(7)
+  p, time
+    :padding-left 32px
+    :padding-right 32px
+  h2
+    :padding-right 32px
+    :padding-top 1em
+  &:nth-child(2n+1)
+    clear: both
+
+.thumbnail
+  margin-left: 64px
+
+#space-header
+  float: left
+  +width(14)
+
+#content-header
+  float: left
+  +width(2)
+
+.square-menu
+  :margin-top 2em
+  :padding-left .5em
+  :padding-right .5em
+  padding-bottom: 1em
+  h2
+    padding-top: 1em
+    padding-bottom: .5em
+
+.footer-right
+  +width(2)
+  :margin-top 2em
+  :padding-left 0em
+  :padding-right 1em
+
+.paginator
+  +width(13)
+  float: left
+  :margin-top 2em
+  padding: 2em
+
+footer#colophon
+  clear: both
+  +width(3)
+  :padding-top 2em
+
+.post-content-wide
+  float: left
+  overflow: hidden
+  +width(14)
+  p, time
+    :padding-left 64px
+    :padding-right 320px
+  pre
+    :padding-left 64px
+    :margin-right 32px
+  h2
+    :padding-right 64px
+    :padding-top 1em
+  &:nth-child(2n+1)
+    clear: both
+  ul, ol
+    :padding-left 64px
+    :padding-right 320px
+  .highlight
+    +width(13)
+    padding-right: 36px
+    margin-right: 0px
+    overflow: scroll
+    pre
+      :padding-left 64px
+      :margin-right 32px
+
+.meta-title
+  h1
+    :padding-bottom 1em
+
+.post-content-disqus
+  margin-top: 3em
+  :padding-left 64px
+  +width(8)
+  float: left
+
+
+/*
+ *  An easy way to zoom your entire layout in or out (as long as it's set in ems).
+ *  Just change the media queries to activate them.
+ *  Assuming your base font-size is 16:
+ *  - the first one zooms out by a factor of (16-2)/16 = 0.875
+ *  - the second one zooms in by a factor of (16+2)/16 = 1.125
+
+// @media screen and (max-width: 1px)
+//   body
+//     font-size: ($font-size - 2) / $em
+//
+// @media screen and (max-width: 1px)
+//   body
+//     font-size: ($font-size + 2) / $em
+//
+
+//@media screen
+//  @media (max-width: 16.875em)
+//    body
+//      font-size: ($font-size - 2) / $em
+//
+//  @media (max-width: 19.9375em)
+//    body
+//      font-size: ($font-size - 1) / $em
+//
+//  @media (min-width: 32.5em) and (max-width: 37.4375em)
+//    //, (min-width: 45em) and (max-width: 56.9375em), (min-width: 77.5em) and (max-width: 102.4375em), (min-width: 135em)
+//    body
+//      background-color: red
+//      font-size: ($font-size + 1) / $em
+//
+//  @media (min-width: 102.5em) and (max-width: 117.9375em)
+//    //, (min-width: 150em)
+//    body
+//      background-color: green
+//      font-size: ($font-size + 2) / $em
+//

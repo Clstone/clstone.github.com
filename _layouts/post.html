@@ -1,5 +1,35 @@
 ---
 layout: default
 ---
-{% include JB/setup %}
-{% include themes/the-minimum/post.html %}
+<!--
+<script type="text/javascript">
+//<![CDATA[
+if (location.href.match(/localhost/)) {
+  var disqus_developer = true;
+}
+//]]>
+</script>
+-->
+<article>
+  <header class="meta-post-wide">
+    <div class="meta-title">
+      <h1>{{ page.title }}</h1>
+    </div>
+  </header>
+  <div class="post-content-wide">
+    {{ content }}
+    <p>
+      &nbsp;
+    </p>
+  </div>
+  <div class="meta-date">
+    <p><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %b, %Y" }}</time></p>
+  </div>
+  <div class="post-content-disqus">
+  <!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" id="UYScript" src="http://v1.uyan.cc/js/iframe.js?UYUserId=1732105" async=""></script>
+<!-- UY END -->
+  </div>
+</article>
+

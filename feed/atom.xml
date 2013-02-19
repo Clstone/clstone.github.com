@@ -1,0 +1,27 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en-GB" xmlns="http://www.w3.org/2005/Atom">
+  <title>Zhaocl - Home</title>
+  <id>tag:zhaocl.com</id>
+  <generator uri="http://jekyllrb.com/" version="0.5">Jekyll</generator>
+  <link href="http://zhaocl.com/feed/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="http://zhaocl.com/" rel="alternate" type="text/html"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <author>
+    <name>zhaocl</name>
+    <email>l@zhaocl.com</email>
+  </author>
+
+  {% for post in site.posts %}
+  <entry>
+    <title>{{ post.title }}</title>
+    <link href="http://zhaocl.com{{ post.url }}"/>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <id>http://rebase.github.com{{ post.id }}</id>
+    <content type="html">{{ post.content | xml_escape }}</content>
+  </entry>
+  {% endfor %}
+
+</feed>
