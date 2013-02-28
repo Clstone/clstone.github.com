@@ -26,7 +26,12 @@ tags:   [Web, Collection]
 
 ****
 
-###Study: Take the World's Best Courses, Online, For Free..
+###Study: Take the World's Best Courses, Online, For Free.
 [Cousera](http://www.coursera.org/)
+
+****
+
+###Study: Courses in UCLA
+[UCLA](http://www.ats.ucla.edu/stat/)
 
 ****
