@@ -171,3 +171,6 @@ div.post-content-wide > pre > code, div.post-content-wide > div.highlight > code
 #links-menu ul > li { *display: inline; }
 
 #search input { width: 96px; }
+
+code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inherit;}
+
