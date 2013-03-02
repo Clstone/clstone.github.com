@@ -43,6 +43,8 @@ h3, h4, h5, h6 { font-family: "museo-sans", "Microsoft YaHei"; font-size: 1em; l
 
 ul { list-style-type: square; }
 
+code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inherit;}
+
 time { font-family: "museo-sans", "Microsoft YaHei"; font-size: 0.825em; }
 
 .square-menu h2 { font-family: "museo-sans", "Microsoft YaHei"; font-size: 1em; line-height: 1.5em; }
