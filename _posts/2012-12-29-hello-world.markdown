@@ -54,7 +54,7 @@ Use 4 spaces indentation:
 
 [a handsome boy](http://zhaocl.com/)
 
-When `\[ $a \ne 0$ \]`, there are two solutions to `\[ \(ax^2 + bx + c = 0\) \]`and they are 
+When ` $a \ne 0$ `, there are two solutions to ` \(ax^2 + bx + c = 0\) `and they are 
 `\[
 \begin{aligned}
 \dot{x} & = \sigma(y-x) \\
