@@ -55,9 +55,13 @@ Use 4 spaces indentation:
 [a handsome boy](http://zhaocl.com/)
 
 When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are 
-<code>\[
-P(E) = {n \choose k} p^k (1-p)^{ n-k}
-\]</code>
+`\[
+\begin{aligned}
+\dot{x} & = \sigma(y-x) \\
+\dot{y} & = \rho x - y - xz \\
+\dot{z} & = -\beta z + xy
+\end{aligned}
+\]`
 
 
 
