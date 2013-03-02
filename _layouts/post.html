@@ -25,13 +25,14 @@ if (location.href.match(/localhost/)) {
   <div class="meta-date">
     <p><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %b, %Y" }}</time></p>
   </div>
-  <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']],
-                       displayMath: [['\\[','\\]'], ['$$','$$']]}});
+  
+  
+<script type='text/x-mathjax-config'>
+MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>
-<script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
+<script type='text/javascript' src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+
+    
   <div class="post-content-disqus">
   <!-- UY BEGIN -->
 <div id="uyan_frame"></div>
