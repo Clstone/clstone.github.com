@@ -54,6 +54,10 @@ Use 4 spaces indentation:
 
 [a handsome boy](http://zhaocl.com/)
 
-When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are $x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$
+When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are 
+\begin{equation}
+x = {-b \pm \sqrt{b^2-4ac} \over 2a}.
+\end{equation}
+
 
 
