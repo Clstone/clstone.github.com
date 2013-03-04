@@ -46,3 +46,7 @@ tags:   [Web, Collection]
 
 ****
 
+###Blog: you will find daily news and tutorials about R, contributed by over 450 bloggers.
+[R-bloggers](http://www.r-bloggers.com//)
+
+****
