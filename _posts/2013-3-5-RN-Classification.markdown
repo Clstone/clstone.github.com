@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reading notes: Review-分类，决策树,组合分类
+title: RN-Classification
 author: zhaocl
 categories: memo
 tags:   [Reading notes, Classification]
