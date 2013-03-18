@@ -47,6 +47,13 @@ tags:   [Web, Collection]
 ****
 
 ###Blog: you will find daily news and tutorials about R, contributed by over 450 bloggers.
-[R-bloggers](http://www.r-bloggers.com//)
+[R-bloggers](http://www.r-bloggers.com/)
+
+****
+
+****
+
+###Meeting Planner:Find the Best Time across time zones Time Zone Abbreviations...It will follow United States's DST schedule in the future. Full Story Go.
+[Time and Date](http://www.timeanddate.com/)
 
 ****
