@@ -1,11 +1,3 @@
----
-layout: post
-title: "Web Collection"
-author: zhaocl
-categories: memo
-tags:   [Web, Collection]
----
-
 ###Productivity: a content editor for GitHub, optimized for managing websites.
 [prose.io](http://prose.io/)
 ****
