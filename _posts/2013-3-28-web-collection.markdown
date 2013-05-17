@@ -57,3 +57,8 @@ tags:   [Websites Collection]
 [Time and Date](http://www.timeanddate.com/)
 
 ****
+
+DNS solutions for your Device, Personal and Business needs (Remote Access!!)
+[Dyn.com](http://dyn.com/dns/)
+
+****
