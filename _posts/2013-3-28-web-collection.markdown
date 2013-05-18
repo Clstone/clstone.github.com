@@ -51,6 +51,12 @@ tags:   [Websites Collection]
 
 ****
 
+
+###A company that focus on interactive Data Visualization.
+[Pitch interactive.](http://www.pitchinteractive.com/beta/index.php/)
+
+****
+
 ****
 
 ###Meeting Planner:Find the Best Time across time zones Time Zone Abbreviations...It will follow United States's DST schedule in the future. Full Story Go.
@@ -62,3 +68,8 @@ tags:   [Websites Collection]
 [Dyn.com](http://dyn.com/dns/)
 
 ****
+###The biggest PPT sharing center in the world.(需要翻墙)
+[Slide Share](http://www.slideshare.net/)
+
+****
+
